@@ -1,0 +1,212 @@
+html{
+    height: 100%;
+}
+
+body{
+    font-family:monospace;
+
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+}
+
+.body-home{
+    background-image: url(images/background-01-1\ land.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body-meals {
+    background-image: url(images/background-01-2\ land.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*===== HEADER =====*/
+.header {
+    width: 100%;
+    height: 50px;
+    top: 0;
+
+    position: absolute;
+    overflow: hidden;
+
+    text-align: center;
+    color: black;
+}
+
+.header img{
+    width: 363px;
+    padding-right: 48px;
+}
+
+.header i {
+    float: left;
+    padding: 17px 0 0 17px;
+}
+
+
+/*===== HOME PAGE =====*/
+#home-logo-img{
+    width: 100px;
+    display: block;
+    margin: auto;
+    padding: 25px 10px 10px 10px;
+}
+
+#home-logo-text{
+    width: 200px;
+    display: block;
+    margin: auto;
+    padding: 25px;
+}
+/*===== HOME-PAGE-MENU =====*/
+
+
+
+.home-menu-items{
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border: 5px solid burlywood;
+
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+/*===== MEALS PAGE =====*/
+#meals {
+    padding-top: 43px;
+
+}
+
+/*===== MEALS-PAGE-MENU =====*/
+.meals-list a {
+    text-decoration: none;
+}
+
+.meals-list-item {
+    border: 5px solid burlywood;
+    margin: 10px;
+}
+
+.meals-list-item h1 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #1a1a1a;
+    padding-left: 10px;
+}
+
+.meals-list-item i{
+    float: right;
+    color: rgb(0, 0, 0);
+    padding-right: 20px;
+}
+
+.meals-list-item p {
+    font-size: 15px;
+    font-style: italic;
+    color: #1a1a1a;
+    margin-top: -7px;
+    padding-left: 10px;
+
+}
+
+/*===== RESTAURANT PAGE =====*/
+
+/*===== RESTAURANT DETAILS =====*/
+.restaurant-details{
+    padding: 380px;
+    padding-top: 70px;
+}
+
+.restaurant-details h1{
+    font-size: 44px;
+    text-align: center;
+    text-decoration: underline brown;
+
+}
+
+.restaurant-details p {
+    font-size: 17px;
+    text-decoration: solid;
+}
+
+
+/*===== BUTTON =====*/
+.order-button {
+    background-color: brown; 
+    color: white; 
+    padding: 15px 30px; 
+    font-size: 23px; 
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: none; /* Remove underline from link */
+    display: inline-block; /* Display as inline-block */
+
+}
+
+.order-button:hover {
+    background-color: #ab1e1e; 
+}
+
+/*===== RESPONSIVE LAYOUT =====*/
+@media only screen and (min-width:600px) {
+    #meals{
+        width: 80%;
+        margin: auto;
+    }
+
+    #resturant{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #meals{
+        width: 60%;
+        margin: auto;
+    }
+
+    #resturant{
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    #meals{
+        width: 40%;
+        margin: auto;
+    }
+
+    #restaurant{
+        width: 40%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .body-home{
+        background-image: url('images/background-01-1\ land.jpg');
+    }
+
+
+    .body-meals{
+        background-image: url('images/background-01-2\ land.jpg');
+    }
+    
+}
